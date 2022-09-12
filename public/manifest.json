@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Lyrics extension",
+  "version": "0.1",
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "author": "sciofu",
+  "action": {
+    "default_title": "Lyrics",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "tabs",
+    "nativeMessaging",
+    "*://youtube.com/*",
+    "*://*.youtube.com/*",
+    "*://spotify.com/*",
+    "*://*.spotify.com/*"
+  ]
+}
